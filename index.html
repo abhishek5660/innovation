@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="navbar">
+                <li class="logo">
+                    <a href="#">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg" alt="Logo">
+                    </a>
+                </li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#dietPlan">Diet Plan</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#criteria">Management Criteria</a></li>
+    
+                <div class="auth-buttons">
+                    <button id="loginBtn">Login</button>
+                    <button id="signupBtn">Signup</button>
+                </div>
+    
+                <li>
+                    <select id="languageSwitcher">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="notifications">
+        <h2>Medicine Notifications</h2>
+        <p id="medicineAlert">Time to take your medicine!</p>
+    </section>
+
+    <section id="doctors">
+        <h2>Doctors Available</h2>
+        <div id="doctorList"></div>
+    </section>
+
+
+    <section id="dietPlan">
+        <h2>Diet Plan</h2>
+        <p id="dietAlert">Follow your diet plan for better health.</p>
+        <button id="showDietPlan">View Diet Plan</button>
+        <ul id="dietList" class="hidden">
+            <li>Eat fresh fruits and vegetables daily</li>
+            <li>Stay hydrated by drinking enough water</li>
+            <li>Include lean proteins in your meals</li>
+            <li>Avoid processed and sugary foods</li>
+            <li>Follow a balanced meal plan</li>
+        </ul>
+    </section>
+    
+
+    <section id="registeredHospitals">
+        <h2>Registered Hospitals</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hospital Name</th>
+                    <th>Location</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody id="hospitalList">
+                <!-- Dynamic hospital list will be added here via JavaScript -->
+                <button class="register-btn">Register Now</button>
+
+            </tbody>
+        </table>
+    </section>
+    
+    
+
+    <section id="criteria">
+        <h2>Hospital Management Criteria</h2>
+        <ul>
+            <li>Efficient patient discharge tracking</li>
+            <li>Automated medicine reminders</li>
+            <li>Easy access to doctor consultations</li>
+            <li>Personalized diet plan notifications</li>
+            <li>Seamless hospital registration process</li>
+            <li>Multi-language support (English & Hindi)</li>
+            <li>Comprehensive doctor details</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Patient Management System. All rights reserved.</p>
+            <p></p>
+            <div class="social-icons">
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="#" target="_blank">Twitter</a> |
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
