@@ -566,8 +566,38 @@ table tbody tr:hover {
 
 
 
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
 
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #007bff;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px 0;
+    }
 
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 
 
