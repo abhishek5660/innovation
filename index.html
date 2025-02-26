@@ -25,18 +25,21 @@
                 <li><a href="#dietPlan">Diet Plan</a></li>
                 <li><a href="#registration">Registration</a></li>
                 <li><a href="#criteria">Management Criteria</a></li>
-
+                <li><a href="#emergency">Emergency Contacts</a></li>
+                <li><a href="#healthTips">Health Tips</a></li>
                 <div class="auth-buttons">
                     <button id="loginBtn">Login</button>
                     <button id="signupBtn">Signup</button>
                 </div>
-
                 <li>
                     <select id="languageSwitcher">
                         <option value="en">English</option>
                         <option value="hi">Hindi</option>
+                        <option value="kn">Kannada</option>
+                        <option value="ta">Tamil</option>
                     </select>
                 </li>
+          
             </ul>
         </nav>
     </header>
@@ -45,6 +48,7 @@
         <h2>Welcome to the Patient Management System</h2>
         <p>Manage patient records, schedules, and medical history efficiently.</p>
     </section>
+    
     <section id="notifications">
         <h2>Medicine Notifications</h2>
         <p id="medicineAlert">Time to take your medicine!</p>
@@ -54,7 +58,6 @@
         <h2>Doctors Available</h2>
         <div id="doctorList"></div>
     </section>
-
 
     <section id="dietPlan">
         <h2>Diet Plan</h2>
@@ -69,7 +72,6 @@
         </ul>
     </section>
     
-
     <section id="registeredHospitals">
         <h2>Registered Hospitals</h2>
         <table>
@@ -80,16 +82,11 @@
                     <th>Contact</th>
                 </tr>
             </thead>
-            <tbody id="hospitalList">
-                <!-- Dynamic hospital list will be added here via JavaScript -->
-                <button class="register-btn">Register Now</button>
-
-            </tbody>
-        </table>
+            <tbody id="hospitalList"></tbody>
+        </table><br>
+        <button class="register-btn">Register Now</button>
     </section>
     
-    
-
     <section id="criteria">
         <h2>Hospital Management Criteria</h2>
         <ul>
@@ -98,16 +95,46 @@
             <li>Easy access to doctor consultations</li>
             <li>Personalized diet plan notifications</li>
             <li>Seamless hospital registration process</li>
-            <li>Multi-language support (English & Hindi)</li>
+            <li>Multi-language support</li>
             <li>Comprehensive doctor details</li>
         </ul>
     </section>
-
-    <!-- Footer Section -->
+    
+    <section id="emergency">
+        <h2>Emergency Contacts</h2>
+        <p>For immediate assistance, contact:</p>
+        <ul>
+            <li>Emergency Helpline: 112</li>
+            <li>Ambulance: 102</li>
+            <li>Nearest Hospital: Contact your local hospital</li>
+        </ul>
+    </section>
+    
+    <section id="healthTips">
+        <h2>Health Tips</h2>
+        <p>Stay healthy with these tips:</p>
+        <ul>
+            <li>Exercise regularly</li>
+            <li>Maintain a balanced diet</li>
+            <li>Get enough sleep</li>
+            <li>Stay hydrated</li>
+            <li>Practice stress management</li>
+        </ul>
+    </section>
+    
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <input type="text" id="patientName" placeholder="Your Name" required>
+            <input type="email" id="patientEmail" placeholder="Your Email" required>
+            <input type="date" id="appointmentDate" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
     <footer>
         <div class="footer-container">
             <p>&copy; 2025 Patient Management System. All rights reserved.</p>
-            <p></p>
             <div class="social-icons">
                 <a href="#" target="_blank">Facebook</a> |
                 <a href="#" target="_blank">Twitter</a> |
@@ -115,7 +142,7 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="index.js"></script>
 </body>
 </html>
